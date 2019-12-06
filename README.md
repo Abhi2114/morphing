@@ -1,5 +1,22 @@
 # Feature based Image Warping
 
+Results:
+
+Input Images:
+
+![](results/beckham.png)
+![](results/ronaldo.png)
+
+After performing a morph:
+
+David Beckham to Cristiano Ronaldo
+
+![](results/ron_beck.gif)
+
+Arnold Schwarzenegger to Terminator
+
+![](results/terminator.gif)
+
 --------- Instructions on how to use the program ----------
 
 All files(images, feature vectors, etc) need to be stored in the root directory.
