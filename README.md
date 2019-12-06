@@ -1,6 +1,21 @@
-# Final Project README - Feature based Image Warping
+# Feature based Image Warping
 
-## Abhinit Sati - (asati@clemson.edu)
+Results:
+
+Input Images:
+
+![](results/beckham.png)
+![](results/ronaldo.png)
+
+After performing a morph:
+
+David Beckham to Cristiano Ronaldo
+
+![](results/ron_beck.gif)
+
+Arnold Schwarzenegger to Terminator
+
+![](results/terminator.gif)
 
 --------- Instructions on how to use the program ----------
 
