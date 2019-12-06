@@ -1,6 +1,4 @@
-# Final Project README - Feature based Image Warping
-
-## Abhinit Sati - (asati@clemson.edu)
+# Feature based Image Warping
 
 --------- Instructions on how to use the program ----------
 
