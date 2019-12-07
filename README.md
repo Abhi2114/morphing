@@ -17,6 +17,8 @@ Arnold Schwarzenegger to Terminator
 
 ![](results/terminator.gif)
 
+![](results/clooney1.gif)
+
 --------- Instructions on how to use the program ----------
 
 All files(images, feature vectors, etc) need to be stored in the root directory.
