@@ -17,8 +17,6 @@ Arnold Schwarzenegger to Terminator
 
 ![](results/terminator.gif)
 
-![](results/clooney1.gif)
-
 Barack Obama to Dwayne Johnson
 
 ![](results/br.gif)
