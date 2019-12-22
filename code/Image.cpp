@@ -133,39 +133,39 @@ vec2 warp(int w, int h,
   // tail = P
   // head = Q
   for (int i = 0; i < sourceLines.size(); i++) {
-	  
-		vec2 pd = input - interLines[i].P;
-		vec2 pq = interLines[i].Q - interLines[i].P;
-		// get the length of the interpolated feature segment PQ
-		float interLength = glm::length(pq);
-		float u = glm::dot(pd, pq) / (interLength * interLength);
+	 
+	vec2 pd = input - interLines[i].P;
+	vec2 pq = interLines[i].Q - interLines[i].P;
+	// get the length of the interpolated feature segment PQ
+	float interLength = glm::length(pq);
+	float u = glm::dot(pd, pq) / (interLength * interLength);
 
-		// cross product between pd and pq
-		float v = (pd.x * pq.y - pd.y * pq.x) / interLength;
+	// cross product between pd and pq
+	float v = (pd.x * pq.y - pd.y * pq.x) / interLength;
 
-		pq = sourceLines[i].Q - sourceLines[i].P;
+	pq = sourceLines[i].Q - sourceLines[i].P;
 
-		 // get the length of the corresponding vector P'Q' in the source
-		float srcLength = glm::length(pq);
-		// corresponding point based on the current line
-		X = sourceLines[i].P.x + u * pq.x + v * pq.y / srcLength;
-		Y = sourceLines[i].P.y + u * pq.y - v * pq.x / srcLength;
+	 // get the length of the corresponding vector P'Q' in the source
+	float srcLength = glm::length(pq);
+	// corresponding point based on the current line
+	X = sourceLines[i].P.x + u * pq.x + v * pq.y / srcLength;
+	Y = sourceLines[i].P.y + u * pq.y - v * pq.x / srcLength;
 
-		// the sortest distance from the corresponding point to the line P'Q'
-		float dist;
-		if (u < 0)
-		  dist = glm::length(pd);
-		else if (u > 1)
-		  dist = glm::length(input - interLines[i].Q);
-		else
-		  dist = abs(v);
+	// the sortest distance from the corresponding point to the line P'Q'
+	float dist;
+	if (u < 0)
+	  dist = glm::length(pd);
+	else if (u > 1)
+	  dist = glm::length(input - interLines[i].Q);
+	else
+	  dist = abs(v);
 
-		// perform a partial weighted sum
-		float weight = pow(pow(interLength, p) / (a + dist), b);
-		sum_x += X * weight;
-		sum_y += Y * weight;
-		weightSum += weight;
-	}
+	// perform a partial weighted sum
+	float weight = pow(pow(interLength, p) / (a + dist), b);
+	sum_x += X * weight;
+	sum_y += Y * weight;
+	weightSum += weight;
+  }
 
   // average the computed sum values and return
   src.x = sum_x / weightSum;
