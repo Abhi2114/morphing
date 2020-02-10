@@ -64,18 +64,18 @@ Different types of files the program deals with:
 
 Commands used to run the program:
 
-./morpher source dest output frames <parameters>
+./morpher source dest output frames <parameters> <br />
 OR
-./morpher -d source dest output frames <parameters>
+./morpher -d source dest output frames <parameters> <br />
 
-morpher - name of the executable generated
-source - source image name (with extension)
-dest - destination image name (with extension)
+morpher - name of the executable generated <br />
+source - source image name (with extension) <br />
+dest - destination image name (with extension) <br />
 output - name of the prefix of the files the program output generates
          (without extension) eg. if output = out,
-         out1.png, out2.png, ..., out30.png assuming we want 30 frames
-frames - number of frames to be generated
-parameters - optional argument, the parameters file
+         out1.png, out2.png, ..., out30.png assuming we want 30 frames <br />
+frames - number of frames to be generated <br />
+parameters - optional argument, the parameters file <br />
 
 The -d option can be used if we want to use existing dat files for the given
 input images. This is convenient if we want to perform the same morphing
