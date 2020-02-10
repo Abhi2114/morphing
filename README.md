@@ -93,6 +93,3 @@ The glm library was used for simplifying linear algebra operations.
 
 The images I have produced in my results had parameter values for a, b and p as
 1, 2 and 0 respectively.
-
-When I set a = 0.1, the program automatically adds lines on top of the input images,
-the reason for which I haven't been able to figure out yet.
